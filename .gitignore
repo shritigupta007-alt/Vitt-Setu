@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+
+# Local prototype artifacts; keep these out of the repository.
+/VittSetu_PRD_Hackathon_Prototype.docx
+/VittSetu_PRD_Student_Hackathon.docx
+/qa/
+/tools/
