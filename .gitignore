@@ -1,5 +1,10 @@
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+*.egg-info/
 
 # Local prototype artifacts; keep these out of the repository.
 /VittSetu_PRD_Hackathon_Prototype.docx

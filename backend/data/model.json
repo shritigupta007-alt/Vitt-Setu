@@ -1,0 +1,67 @@
+{
+  "model_version": "prototype-scorecard-0.1.0",
+  "feature_schema_version": "financial-features-0.1.0",
+  "scoring_approach": "Deterministic weighted scorecard centered on a baseline of 50. Scores are a prototype readiness signal, not a probability of repayment.",
+  "baseline_score": 50.0,
+  "features": [
+    {
+      "key": "inflow_regularity",
+      "label": "Inflow regularity",
+      "range_points": 24,
+      "cap": 1,
+      "reason_code": "INFLOW_REGULARITY",
+      "positive_reason": "More weeks show qualifying inflow in this demo summary.",
+      "negative_reason": "Fewer weeks show qualifying inflow in this demo summary."
+    },
+    {
+      "key": "income_volatility",
+      "label": "Income volatility",
+      "range_points": -18,
+      "cap": 1,
+      "reason_code": "INCOME_VOLATILITY",
+      "positive_reason": "Income changes less sharply across the observed demo months.",
+      "negative_reason": "Income changes more sharply across the observed demo months."
+    },
+    {
+      "key": "bill_punctuality",
+      "label": "Bill punctuality",
+      "range_points": 20,
+      "cap": 1,
+      "reason_code": "BILL_PUNCTUALITY",
+      "positive_reason": "Selected recurring bills are more often on time in this demo summary.",
+      "negative_reason": "Selected recurring bills are less often on time in this demo summary."
+    },
+    {
+      "key": "supplier_payment_consistency",
+      "label": "Supplier-payment consistency",
+      "range_points": 16,
+      "cap": 1,
+      "reason_code": "SUPPLIER_PAYMENT_CONSISTENCY",
+      "positive_reason": "Declared business payments follow a more consistent pattern in this demo summary.",
+      "negative_reason": "Declared business payments follow a less consistent pattern in this demo summary."
+    },
+    {
+      "key": "balance_buffer_days",
+      "label": "Balance buffer",
+      "range_points": 12,
+      "cap": 30,
+      "reason_code": "BALANCE_BUFFER",
+      "positive_reason": "The demo summary shows more days of typical-outflow buffer.",
+      "negative_reason": "The demo summary shows fewer days of typical-outflow buffer."
+    }
+  ],
+  "exclusions": [
+    "No raw transaction narratives, bank credentials, contacts, SMS, call logs, location, photos, protected attributes, or credit-bureau file.",
+    "Data coverage affects evidence confidence only; a missing feature is not silently treated as zero."
+  ],
+  "limitations": [
+    "The feature values, weights, and personas are synthetic and illustrative.",
+    "This model is not trained or validated to predict default or repayment.",
+    "The output cannot make a lending, pricing, KYC, collection, or fraud decision."
+  ],
+  "test_summary": [
+    "Golden fixtures verify reproducible score output.",
+    "Boundary tests keep the score within 0-100.",
+    "Monotonicity tests verify that a beneficial observed change does not lower the prototype score."
+  ]
+}

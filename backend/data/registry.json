@@ -1,0 +1,31 @@
+{
+  "provenance": {
+    "snapshot_id": "illustrative-registry-2026-09-07",
+    "as_of_date": "2026-09-07",
+    "source": "VittSetu synthetic illustrative registry fixture; not an RBI, regulated-entity, app-store, or live directory source.",
+    "limitation": "A listed association is not a safety guarantee. An unlisted result is not evidence of fraud. Independently verify the regulated entity, publisher, Key Fact Statement, APR, and payment destination."
+  },
+  "associations": [
+    {
+      "app_name": "Udyam Sathi Demo",
+      "app_package": "org.vittsetu.udyamsathi.demo",
+      "domain": "udyamsathi-demo.example",
+      "regulated_entity_name": "Sampoorna Finance Demo Ltd.",
+      "association_evidence": "Synthetic fixture: app name, package, and illustrative entity association are intentionally bundled for the prototype."
+    },
+    {
+      "app_name": "Sahaj Cashflow Demo",
+      "app_package": "org.vittsetu.sahajcashflow.demo",
+      "domain": "sahajcashflow-demo.example",
+      "regulated_entity_name": "NavDisha Credit Demo Ltd.",
+      "association_evidence": "Synthetic fixture: app name, package, and illustrative entity association are intentionally bundled for the prototype."
+    },
+    {
+      "app_name": "Kisan Setu Demo",
+      "app_package": "org.vittsetu.kisansetu.demo",
+      "domain": "kisansetu-demo.example",
+      "regulated_entity_name": "Pragati Rural Finance Demo Ltd.",
+      "association_evidence": "Synthetic fixture: app name, package, and illustrative entity association are intentionally bundled for the prototype."
+    }
+  ]
+}

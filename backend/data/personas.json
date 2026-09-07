@@ -1,0 +1,52 @@
+{
+  "personas": [
+    {
+      "id": "radha-vendor",
+      "name": "Radha",
+      "age": 34,
+      "occupation": "Vegetable vendor",
+      "scenario": "Radha receives daily UPI payments and wants to discuss a small inventory need before a festival.",
+      "intended_use": "inventory",
+      "derived_features": {
+        "inflow_regularity": 0.82,
+        "income_volatility": 0.28,
+        "bill_punctuality": 0.9,
+        "supplier_payment_consistency": 0.78,
+        "balance_buffer_days": 14,
+        "data_coverage_months": 6
+      }
+    },
+    {
+      "id": "imran-gig-worker",
+      "name": "Imran",
+      "age": 27,
+      "occupation": "Delivery worker",
+      "scenario": "Imran needs emergency cash-flow support after an unexpected vehicle repair.",
+      "intended_use": "emergency",
+      "derived_features": {
+        "inflow_regularity": 0.54,
+        "income_volatility": 0.68,
+        "bill_punctuality": 0.62,
+        "supplier_payment_consistency": null,
+        "balance_buffer_days": 3,
+        "data_coverage_months": 4
+      }
+    },
+    {
+      "id": "meera-farmer",
+      "name": "Meera",
+      "age": 42,
+      "occupation": "Small farmer",
+      "scenario": "Meera is planning seasonal seed and equipment expenses before sowing.",
+      "intended_use": "seasonal_input",
+      "derived_features": {
+        "inflow_regularity": 0.42,
+        "income_volatility": 0.8,
+        "bill_punctuality": 0.76,
+        "supplier_payment_consistency": 0.7,
+        "balance_buffer_days": 9,
+        "data_coverage_months": 6
+      }
+    }
+  ]
+}
